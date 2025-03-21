@@ -1,0 +1,312 @@
+type: picture-elements
+elements:
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7343_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7343_g
+        style:
+          left: 18%
+          top: 67%
+          color: transparent
+          font-size: 75%
+          transform: scale(0.5,0.5)
+    title: หน้าต่างนั่งเล่น
+  - type: conditional
+    title: โรงรถ
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7341_g
+        state: "on"
+    elements:
+      - type: state-badge
+        style:
+          left: 52%
+          top: 60%
+          color: transparent
+          font-size: 75%
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7341_g
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7344_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7344_g
+        style:
+          left: 18%
+          top: 45%
+          color: transparent
+          font-size: 75%
+    title: ประตูข้าง
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7345_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7345_g
+        style:
+          left: 18%
+          top: 30%
+          color: transparent
+          font-size: 75%
+    title: นอน1
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7347_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7347_g
+        style:
+          left: 32%
+          top: 18%
+          color: transparent
+          font-size: 75%
+    title: นอน2
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7349_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7349_g
+        style:
+          left: 71%
+          top: 11%
+          color: transparent
+          font-size: 75%
+    title: ประตูครัว
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_734a_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_734a_g
+        style:
+          left: 82%
+          top: 29%
+          color: transparent
+          font-size: 75%
+    title: ต่างครัว2
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7348_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7348_g
+        style:
+          left: 62%
+          top: 12%
+          color: transparent
+          font-size: 75%
+    title: ต่างครัว1
+  - type: state-icon
+    entity: switch.water_pump_socket_1_2
+    tap_action:
+      action: toggle
+    title: " ปั้ม"
+    style:
+      left: 90%
+      top: 09%
+      color: transparent
+      font-size: 95%
+      "--ha-icon-display": inline
+    icon: mdi:water-pump
+  - type: state-icon
+    style:
+      left: 67%
+      top: 62%
+      color: transparent
+      font-size: 75%
+      "--ha-icon-display": inline
+      "--paper-item-icon-color": grey
+    entity: switch.sl_sw_cp2_azmaalxpgweaabm_uaz_w_7346_l2
+    title: ไฟโรงรถ
+    tap_action:
+      action: toggle
+    icon: mdi:lightbulb
+  - type: state-icon
+    title: ไฟตู้ปลา
+    tap_action:
+      action: toggle
+    entity: switch.aiftuuplaa_socket_1
+    icon: mdi:lightbulb
+    style:
+      "--ha-icon-display": inline
+      "--paper-item-icon-color": grey
+      left: 33%
+      top: 39%
+      font-size: 75%
+  - title: fannnnnn
+    type: custom:mushroom-fan-card
+    icon: mdi:fan
+    icon_animation: true
+    entity: switch.phadlmkhaaw_socket_1
+    fill_container: true
+    icon_type: icon
+    layout: vertical
+    name: " "
+    card_mod:
+      style: |
+        :host ha-card
+        {
+            background:transparent !important;
+        }
+        :host {
+                  --mush-icon-symbol-size:1.35em;
+                }
+    style:
+      left: 33%
+      top: 56%
+      color: transparent
+      font-size: 95%
+    tap_action:
+      action: toggle
+  - type: state-icon
+    style:
+      left: 33%
+      top: 68%
+      color: transparent
+      font-size: 75%
+      "--ha-icon-display": inline
+      "--paper-item-icon-color": grey
+    title: ไฟนั่งเล่น
+    entity: switch.sl_sw_cp2_azmaalxpgweaabm_uaz_w_7346_l1
+    tap_action:
+      action: toggle
+    icon: mdi:lightbulb
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7342_g
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.sl_sc_bg_azmaalxpgweaabm_uaz_w_7342_g
+        style:
+          left: 33%
+          top: 80%
+          font-size: 75%
+          color: transparent
+    title: ประตูหน้า
+  - type: state-icon
+    entity: switch.pratuueluue_n_switch_1
+    title: ประตูเลื่อน
+    tap_action:
+      action: toggle
+    icon: mdi:gate
+    style:
+      left: 67%
+      top: 92%
+      color: transparent
+      font-size: 75%
+      "--ha-icon-display": inline
+      "--paper-item-icon-color": grey
+  - type: state-badge
+    entity: switch.sl_oe_de_azmaalxpgweaabm_uaz_w_733e_p1
+    style:
+      left: 9%
+      top: 90%
+      color: red
+      font-size: 75%
+    tap_action:
+      action: toggle
+  - type: state-badge
+    entity: scene.enable_sliding
+    tap_action:
+      action: perform-action
+      perform_action: scene.turn_on
+      target:
+        device_id: 3ee54be5503f6ee2cd96037037bf9b17
+      data: {}
+    style:
+      left: 44%
+      top: 52%
+      color: transparent
+      font-size: 0%
+  - type: state-badge
+    entity: scene.disable_sliding_door
+    tap_action:
+      action: perform-action
+      perform_action: scene.turn_on
+      target:
+        entity_id: scene.disable_sliding_door
+    style:
+      left: 44%
+      top: 42%
+      color: transparent
+      font-size: 0%
+  - type: state-badge
+    tap_action:
+      action: toggle
+    entity: scene.close_sliding_door
+    style:
+      left: 50%
+      top: 47.5%
+      color: transparent
+      font-size: 0%
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: switch.dryer_power
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: switch.dryer_power
+        style:
+          left: 66%
+          top: 25%
+          color: transparent
+          font-size: 60%
+    title: Dryer
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: switch.washer_power
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: switch.washer_power
+        style:
+          left: 66%
+          top: 19%
+          color: transparent
+          font-size: 60%
+    title: Washer
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: binary_sensor.refrigerator_door_open
+        state: "on"
+    elements:
+      - type: state-badge
+        entity: binary_sensor.refrigerator_door_open
+        style:
+          left: 66%
+          top: 34%
+          color: transparent
+          font-size: 60%
+    title: Fridge
+  - type: state-icon
+    entity: climate.carrier_living_room
+    title: AC
+    icon: mdi:air-conditioner
+    style:
+      left: 10%
+      top: 64%
+      "--ha-icon-display": inline
+      "--paper-item-icon-color": grey
+image: /api/image/serve/ec72f239392ec6a9fbe3ed04e1b86137/512x512
